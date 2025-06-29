@@ -1,0 +1,168 @@
+/* ===============================
+   RESPONSIVE LAYOUT
+   =============================== */
+
+/* GLOBAL */
+html {
+  font-size: 55%;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 52%;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 48%;
+  }
+}
+
+/* HEADER & NAV */
+@media (max-width: 768px) {
+  #menu-icon {
+    display: block;
+    font-size: 3rem;
+    color: var(--text-color);
+    cursor: pointer;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--bg-color);
+    width: 100%;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 3%;
+    display: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+
+  .navbar a {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+/* HOME SECTION */
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 12rem;
+  }
+
+  .home-content h1 {
+    font-size: 4.8rem;
+  }
+
+  .home-img img {
+    width: 65vw;
+    height: 65vw;
+    margin-top: 3rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+
+/* ABOUT SECTION */
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    padding: 8rem 5%;
+    text-align: center;
+  }
+
+  .about-img img {
+    width: 60vw;
+    height: 60vw;
+  }
+
+  .about-content {
+    padding: 2rem;
+  }
+}
+
+/* SKILLS SECTION */
+@media (max-width: 768px) {
+  .Skills-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .Skills-box {
+    width: 100%;
+  }
+}
+
+/* EXPERIENCE SECTION */
+@media (max-width: 768px) {
+  .Portfolio-container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .Portfolio-box {
+    width: 100%;
+  }
+}
+
+/* EDUCATION TIMELINE */
+@media (max-width: 768px) {
+  .timeline {
+    padding-left: 1rem;
+    margin-left: 0;
+    border-left: none;
+  }
+
+  .timeline-item {
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .timeline-icon {
+    position: static;
+    margin: 1rem auto;
+  }
+
+  .timeline-content {
+    padding: 2rem;
+  }
+}
+
+/* CONTACT SECTION */
+@media (max-width: 768px) {
+  .contact form .input-box {
+    flex-direction: column;
+  }
+
+  .contact form .input-box input,
+  .contact form textarea {
+    width: 100%;
+  }
+
+  .contact form .btn {
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+}
+
+/* FOOTER */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .scroll-top {
+    margin-top: 1rem;
+  }
+}
